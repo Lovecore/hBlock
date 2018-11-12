@@ -4,7 +4,10 @@ const sha256 = require('sha256');
 function Blockchain() {
     this.chain = [];
     this.pendingTransactions = [];
-}
+
+    //lets create a genesis block with random data
+    this.createNewBlock(100, '0', '0');
+};
 
 //Blockchian datastructure
 Blockchain.prototype.createNewBlock = function(nonce, previousBlockHash, hash) {
