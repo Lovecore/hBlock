@@ -1,4 +1,4 @@
-const Blockchain = require('./blockchian');
+const Blockchain = require('./blockchain');
 
 const pkizzle = new Blockchain();
 
